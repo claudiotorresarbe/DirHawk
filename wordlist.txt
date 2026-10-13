@@ -2,7 +2,6 @@ www
 mail
 ns2
 ns1
-get
 ftp
 smtp
 webmail
