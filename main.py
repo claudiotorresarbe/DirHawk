@@ -11,7 +11,7 @@ def call(url):
 if __name__ == '__main__':
     url, filename, condition = sys.argv[1], sys.argv[2], sys.argv[3]
 
-    s0, t0 = call(url.replace('{hack}', '9999'))
+    s0, t0 = call(url.replace('{hack}', 'n4buc0d0n0s0r'))
 
     print(80 * '#')
     print(f"url: {url.replace('{hack}', '')}")
