@@ -45,7 +45,13 @@ python main.py "<URL>" "<FILENAME>" "<CONDITION>"
 ### Exemplo
 
 ```bash
-python script.py "https://httpbin.org/{hack}" wordlist.txt True
+python main.py "https://httpbin.org/{hack}" wordlist.txt True
+```
+
+or
+
+```bash
+python main.py "https://{hack}.httpbin.org/" wordlist.txt True
 ```
 
 O arquivo `wordlist.txt` deve conter um caminho por linha:
