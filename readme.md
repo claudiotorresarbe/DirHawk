@@ -31,7 +31,7 @@ python -m pip install requests
 Execute o script passando três argumentos:
 
 ```bash
-python main.py "<URL>" "<FILENAME>" "<CONDITION>"
+python main.py <URL> <FILENAME> <CONDITION>
 ```
 
 ### Parâmetros
