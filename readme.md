@@ -41,16 +41,20 @@ python main.py <URL> <FILENAME> <CONDITION>
 | `url` | URL contendo o marcador `{hack}`, que será substituído por cada entrada da wordlist. |
 | `filename` | Caminho do arquivo de texto com a wordlist. |
 | `condition` | Use `True` para exibir somente respostas cujo tamanho seja diferente da referência. Qualquer outro valor exibe todos os resultados. |
+| 'save' | (Opcional) Nome do arquivo onde serão salvos os possíveis targets encontrados.|
 
 ### Exemplo
 
 ```bash
+# Apenas exibir os resultados
 python main.py https://httpbin.org/{hack} wordlist.txt True
 ```
-
-or
-
 ```bash
+# Exibir e salvar os possíveis targets
+python main.py https://httpbin.org/{hack} wordlist.txt True results.txt
+```
+```bash
+# Subdomínio
 python main.py https://{hack}.httpbin.org/ wordlist.txt True
 ```
 
@@ -72,6 +76,7 @@ api
 4. Substitui `{hack}` pela entrada atual e realiza uma requisição.
 5. Exibe o status HTTP e o tamanho da resposta.
 6. Quando `condition` é `True`, mostra somente as respostas cujo tamanho difere da referência.
+7. Se o parâmetro save for informado, grava os possíveis targets no arquivo especificado.
 
 **Importante:** uma resposta com tamanho diferente não confirma, por si só, que um caminho existe. Redirecionamentos, páginas de erro personalizadas e conteúdo dinâmico também podem alterar o tamanho da resposta.
 
