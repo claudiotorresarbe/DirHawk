@@ -41,7 +41,7 @@ python main.py <URL> <FILENAME> <CONDITION>
 | `url` | URL contendo o marcador `{hack}`, que será substituído por cada entrada da wordlist. |
 | `filename` | Caminho do arquivo de texto com a wordlist. |
 | `condition` | Use `True` para exibir somente respostas cujo tamanho seja diferente da referência. Qualquer outro valor exibe todos os resultados. |
-| 'save' | (Opcional) Nome do arquivo onde serão salvos os possíveis targets encontrados.|
+| `save` | (Opcional) Nome do arquivo onde serão salvos os possíveis targets encontrados.|
 
 ### Exemplo
 
